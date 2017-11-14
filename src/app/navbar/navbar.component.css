@@ -1,0 +1,9 @@
+.navbar{
+    background-color: white;
+}
+button{
+    border: none;
+}
+button:active{
+    border: none;
+}
