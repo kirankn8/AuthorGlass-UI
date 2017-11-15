@@ -1,9 +1,8 @@
 .navbar{
     background-color: white;
 }
-button{
+.navbar-toggler{
+    outline: none;
     border: none;
 }
-button:active{
-    border: none;
-}
+

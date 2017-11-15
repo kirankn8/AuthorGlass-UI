@@ -1,0 +1,16 @@
+.search-btn:hover{
+    background-color: lightgray;
+}
+.search-btn{
+    background-color: white;
+    outline: 0;
+    border: 2px solid #000000;
+    border-left: none;
+    cursor:pointer;
+}
+.search-input{
+    background-color: white;
+    outline: 0;
+    border: 2px solid #000000;
+    border-right: none;
+}
