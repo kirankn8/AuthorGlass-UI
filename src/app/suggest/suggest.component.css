@@ -12,7 +12,7 @@
     background-color: white;
     outline: 0;
     border: 2px solid #000000;
-    border-right: none;
+	border-right: none;
 }
 .results{
 	list-style-type: none;
@@ -36,4 +36,8 @@
 }
 .suggestions:hover {
 	background: #cccccc;
+}
+.input-group {
+	margin-top: 8px;
+	height: 70%;
 }

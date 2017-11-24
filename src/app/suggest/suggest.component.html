@@ -1,6 +1,6 @@
 <!-- Search Bar -->
 <!-- Search :{{ search_term }} -->
-<div class="row">
+<!-- <div class="row">
         <div class="col-sm-3 col-xs-1"></div>
         <div class="col-sm-6 col-xs-10">
             <div class="input-group">
@@ -10,7 +10,7 @@
                         aria-describedby="basic-addon2" [value]="search_term">
                 <button class="input-group-addon search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
-            <!-- <ul class="results" (mouseleave)="search_term=''">
+            <ul class="results" (mouseleave)="search_term=''">
                 <li class="suggestions" (mouseenter)="changeSearchTerm('hello1')">
                     <a>hello1</a>
                 </li>
@@ -26,8 +26,15 @@
                 <li class="suggestions" (mouseenter)="changeSearchTerm('hello5')">
                     <a>hello5</a>
                 </li>   
-            </ul>             -->
+            </ul>            
         </div>
         <div class="col-sm-3 col-xs-1"></div>
-    </div>
+    </div> -->
     <!-- End of Search Bar -->
+    <div class="input-group">
+        <input  type="search" 
+                class="form-control search-input" 
+                placeholder="Search" 
+                aria-describedby="basic-addon2" [value]="search_term" size="30%">
+        <button class="input-group-addon search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>

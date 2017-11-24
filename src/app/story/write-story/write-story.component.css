@@ -1,0 +1,27 @@
+.tab {
+    display: none;
+}
+.step {
+    height: inherit;
+    width: inherit;
+    margin: auto;
+    /* background-color: #66ccff; */
+    display: inline-block;
+    opacity: 0.5;
+    padding: 10px 10px 10px 10px;
+    /* color: white; */
+    color: black;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+    /* background-color: #3399ff; */
+    /* border-bottom: 2px solid #3399ff;  */
+  }
+  
+  .progress{
+        width: 70%;
+        margin: auto;
+  }
+  

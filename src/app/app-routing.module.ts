@@ -1,5 +1,8 @@
 import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+import { SearchComponent } from './search/search.component';
+
 import { HomeModule } from './home/home.module';
 
 export const routes: Routes = [
@@ -8,6 +11,7 @@ export const routes: Routes = [
   { path: 'story', loadChildren: 'app/story/story.module#StoryModule' },
   { path: 'authentication', loadChildren: 'app/authentication/authentication.module#AuthenticationModule' },
   { path: 'analytics', loadChildren: 'app/analytics/analytics.module#AnalyticsModule' },
+  { path: 'search', component: SearchComponent },
 ];
 
 @NgModule({

@@ -4,11 +4,20 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" routerLink="">AuthorGlass</a>
+        <a class="navbar-brand" routerLink="/">
+            <img src="/assets/authorglass_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            AuthorGlass
+        </a>        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto my-auto">
+                <li class="nav-item">
+                    <!-- Search Bar -->
+                    <suggest></suggest>
+                </li>
+            </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="story/display" routerLinkActive="active">
+                    <a class="nav-link" routerLink="story/write" routerLinkActive="active">
                         Write Story
                     </a>
                 </li>
@@ -19,8 +28,7 @@
                 </li>
             </ul>
         </div>
-        <!-- Search Bar -->
     </nav>
-    <suggest></suggest>
+    <!-- <suggest></suggest> -->
 </div>
 <!-- End of Navigation Bar -->
