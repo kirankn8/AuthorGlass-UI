@@ -1,31 +1,43 @@
-<div>
-    <h6>Story Title</h6>
-    <p>written by Author-name</p>
-</div>
-
-
+<blockquote class="blockquote text-right">
+    <p class="mb-0"> <u>Story Title</u> </p>
+    <footer class="blockquote-footer">written by <cite title="Source Title">Author Name</cite></footer>
+</blockquote>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="read-tab" data-toggle="tab" href="#read" role="tab" aria-controls="read" aria-selected="true">Read</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="false">Ratings</a>
+    <a class="nav-link" id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="false">Reviews</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="alternate-tab" data-toggle="tab" href="#alternate" role="tab" aria-controls="alternate" aria-selected="false">Alternate</a>
   </li>
 </ul>
-
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="read" role="tabpanel" aria-labelledby="read-tab">
-      Display Pages
+      <br>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select Chapter
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <app-read></app-read>
   </div>
 
   <div class="tab-pane fade" id="ratings" role="tabpanel" aria-labelledby="ratings-tab">
-      Display Analytics, Ratings, Reviews
+      <!-- Display Analytics, Ratings, Reviews -->
+      <br>
+      <app-ratings></app-ratings>
   </div>
 
   <div class="tab-pane fade" id="alternate" role="tabpanel" aria-labelledby="alternate-tab">
+      <br>
       Display people who have written similar or alternate endings
+      <app-alternate></app-alternate>
   </div>
 </div>
