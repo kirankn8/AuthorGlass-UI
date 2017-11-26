@@ -4,7 +4,32 @@
     padding-top: 1%;
     padding-bottom: 1%;
 }
-.card-header {
+/* .pageno {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;      
+    appearance: none;
+    background-color: rgb(252, 252, 252);
+    padding-bottom: 0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+.pageno::-ms-expand
+{
+    display: none;
+}
+.pageno > option {
+    background-color: rgb(252, 252, 252);
+    padding: 2px 2px 2px 2px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    outline: none;
+    border: none;
+} */
+.card-header{
     border: none;
     background-color: rgb(252, 252, 252);
     padding-bottom: 0;
@@ -17,4 +42,13 @@
     padding-top: 0;
     font-size: 12px;
     font-style: oblique;
+}
+.page {
+    position: absolute;
+}
+#page1 {
+    z-index:100;
+}
+#page2 {
+    z-index:50;
 }

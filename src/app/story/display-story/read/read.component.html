@@ -1,39 +1,45 @@
-<button class="btn btn-primary btn-sm" (click)="prevPage()">Previous Page</button>
-<button class="btn btn-primary btn-sm" (click)="nextPage()">Next Page</button>
-<div class="pages">
-	<div class="page" [@page]="page_animation">
-		<div class="card">
-			<div class="card-header">
-				<div class="float-right"><b>Page 1</b></div>
+<div class="btn-group">
+		<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  Select Chapter
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+		</div>
+	</div>
+	<div class="float-md-right float-sm-left">
+		<button class="btn btn-primary btn-sm" (click)="prevPage()">Previous Page</button>
+		<button class="btn btn-primary btn-sm" (click)="nextPage()">Next Page</button>
+	</div>
+	<div class="pages">
+		<div class="page" id="page1" [@page]="pageAnimation"  (@page.done)="resetPageAnimation($event)">
+			<div class="card">
+				<div class="card-header">
+					<div class="float-right"><b>Page {{ current_content.pageNo }}</b></div>
+				</div>
+				<div class="card-block">
+					{{ current_content.content }}
+				</div>
+				<div class="card-footer">
+					<div class="float-right"><b>Page {{ current_content.pageNo }}</b></div>
+				</div>
 			</div>
-			<div class="card-block">
-					New Worlds is a British science fiction magazine that began in 1936 as a fanzine called Novae Terrae. It was first published professionally in 1946, edited by John Carnell. It was the leading British science fiction publication during the period to 1960 described by historian Mike Ashley as the magazine's "Golden Age". Early issues featured John Wyndham's "The Living Lies", under his John Beynon alias, and "Inheritance", an early story by Arthur C. Clarke. "Escapement" by J. G. Ballard appeared in the December 1956 issue; this was Ballard's first professionally published work, and he went on to become a significant figure in science fiction in the 1960s. After 1964, when Michael Moorcock became editor, the magazine featured experimental and avant-garde material, and it became the focus of the modernist New Wave of science fiction. Reaction among the science fiction community was mixed, with partisans and opponents of the New Wave debating the merits of New Worlds in the columns of fanzines, such as Speculation. Several of the regular contributors during this period, including Brian Aldiss and Thomas M. Disch, became major names in science fiction. 
-			</div>
-			<div class="card-footer">
-					<div class="float-right"><b>Page 1</b></div>
+		</div>
+		<div class="page" id="page2">
+			<div class="card">
+				<div class="card-header">
+					<div class="float-right"><b>Page {{ next_content.pageNo }}</b></div>
+				</div>
+				<div class="card-block">
+					{{ next_content.content }}
+				</div>
+				<div class="card-footer">
+					<div class="float-right"><b>Page {{ next_content.pageNo }}</b></div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="page">
-		<div class="card">
-			<div class="card-block">
-					New Worlds is a British science fiction magazine that began in 1936 as a fanzine called Novae Terrae. It was first published professionally in 1946, edited by John Carnell. It was the leading British science fiction publication during the period to 1960 described by historian Mike Ashley as the magazine's "Golden Age". Early issues featured John Wyndham's "The Living Lies", under his John Beynon alias, and "Inheritance", an early story by Arthur C. Clarke. "Escapement" by J. G. Ballard appeared in the December 1956 issue; this was Ballard's first professionally published work, and he went on to become a significant figure in science fiction in the 1960s. After 1964, when Michael Moorcock became editor, the magazine featured experimental and avant-garde material, and it became the focus of the modernist New Wave of science fiction. Reaction among the science fiction community was mixed, with partisans and opponents of the New Wave debating the merits of New Worlds in the columns of fanzines, such as Speculation. Several of the regular contributors during this period, including Brian Aldiss and Thomas M. Disch, became major names in science fiction. 
-			</div>
-		</div>
-	</div>
-	<div class="page">
-		<div class="card">
-			<div class="card-block">
-					New Worlds is a British science fiction magazine that began in 1936 as a fanzine called Novae Terrae. It was first published professionally in 1946, edited by John Carnell. It was the leading British science fiction publication during the period to 1960 described by historian Mike Ashley as the magazine's "Golden Age". Early issues featured John Wyndham's "The Living Lies", under his John Beynon alias, and "Inheritance", an early story by Arthur C. Clarke. "Escapement" by J. G. Ballard appeared in the December 1956 issue; this was Ballard's first professionally published work, and he went on to become a significant figure in science fiction in the 1960s. After 1964, when Michael Moorcock became editor, the magazine featured experimental and avant-garde material, and it became the focus of the modernist New Wave of science fiction. Reaction among the science fiction community was mixed, with partisans and opponents of the New Wave debating the merits of New Worlds in the columns of fanzines, such as Speculation. Several of the regular contributors during this period, including Brian Aldiss and Thomas M. Disch, became major names in science fiction. 
-			</div>
-		</div>
-	</div>
-	<div class="page">
-		<div class="card">
-			<div class="card-block">
-					New Worlds is a British science fiction magazine that began in 1936 as a fanzine called Novae Terrae. It was first published professionally in 1946, edited by John Carnell. It was the leading British science fiction publication during the period to 1960 described by historian Mike Ashley as the magazine's "Golden Age". Early issues featured John Wyndham's "The Living Lies", under his John Beynon alias, and "Inheritance", an early story by Arthur C. Clarke. "Escapement" by J. G. Ballard appeared in the December 1956 issue; this was Ballard's first professionally published work, and he went on to become a significant figure in science fiction in the 1960s. After 1964, when Michael Moorcock became editor, the magazine featured experimental and avant-garde material, and it became the focus of the modernist New Wave of science fiction. Reaction among the science fiction community was mixed, with partisans and opponents of the New Wave debating the merits of New Worlds in the columns of fanzines, such as Speculation. Several of the regular contributors during this period, including Brian Aldiss and Thomas M. Disch, became major names in science fiction. 
-			</div>
-		</div>
-	</div>
-</div>
-
+	
+	
+	
