@@ -1,45 +1,50 @@
 <div class="btn-group">
-		<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		  Select Chapter
-		</button>
-		<div class="dropdown-menu">
-			<a class="dropdown-item" href="#">Action</a>
-			<a class="dropdown-item" href="#">Another action</a>
-			<a class="dropdown-item" href="#">Something else here</a>
-		</div>
+	<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Select Chapter
+	</button>
+	<div class="dropdown-menu">
+		<a class="dropdown-item" href="#">Action</a>
+		<a class="dropdown-item" href="#">Another action</a>
+		<a class="dropdown-item" href="#">Something else here</a>
 	</div>
-	<div class="float-md-right float-sm-left">
-		<button class="btn btn-primary btn-sm" (click)="prevPage()">Previous Page</button>
-		<button class="btn btn-primary btn-sm" (click)="nextPage()">Next Page</button>
-	</div>
-	<div class="pages">
-		<div class="page" id="page1" [@page]="pageAnimation"  (@page.done)="resetPageAnimation($event)">
-			<div class="card">
-				<div class="card-header">
-					<div class="float-right"><b>Page {{ current_content.pageNo }}</b></div>
-				</div>
-				<div class="card-block">
-					{{ current_content.content }}
-				</div>
-				<div class="card-footer">
-					<div class="float-right"><b>Page {{ current_content.pageNo }}</b></div>
+</div>
+<div class="float-md-right float-sm-left">
+	<button class="btn btn-primary btn-sm" (click)="prevPage()">Previous Page</button>
+	<button class="btn btn-primary btn-sm" (click)="nextPage()">Next Page</button>
+</div>
+<div class="pages">
+	<div class="page" id="page1" [@page]="pageAnimation" (@page.done)="resetPageAnimation($event)">
+		<div class="card">
+			<div class="card-header">
+				<div class="float-right">
+					<b>Page {{ current_content.pageNo }}</b>
 				</div>
 			</div>
-		</div>
-		<div class="page" id="page2">
-			<div class="card">
-				<div class="card-header">
-					<div class="float-right"><b>Page {{ next_content.pageNo }}</b></div>
-				</div>
-				<div class="card-block">
-					{{ next_content.content }}
-				</div>
-				<div class="card-footer">
-					<div class="float-right"><b>Page {{ next_content.pageNo }}</b></div>
+			<div class="card-block">
+				{{ current_content.content }}
+			</div>
+			<div class="card-footer">
+				<div class="float-right">
+					<b>Page {{ current_content.pageNo }}</b>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	
-	
+	<div class="page" id="page2">
+		<div class="card">
+			<div class="card-header">
+				<div class="float-right">
+					<b>Page {{ next_content.pageNo }}</b>
+				</div>
+			</div>
+			<div class="card-block">
+				{{ next_content.content }}
+			</div>
+			<div class="card-footer">
+				<div class="float-right">
+					<b>Page {{ next_content.pageNo }}</b>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

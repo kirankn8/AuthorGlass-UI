@@ -79,7 +79,6 @@ export class ReadComponent implements OnInit {
     setTimeout(() => {
       this.pageAnimation = 'nextPage';
     });
-    // this.pageAnimation = 'nextPage';
     this.prev_content = this.current_content;
     this.current_content = this.next_content;
   }
