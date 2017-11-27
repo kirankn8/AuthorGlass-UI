@@ -16,6 +16,6 @@ import 'hammerjs';
     NgxCarouselModule,
   ],
   declarations: [ DashboardComponent, BookshelfComponent, RecommendationsComponent, HomeComponent, BookComponent],
-  exports:      [ HomeComponent ],
+  exports:      [ ],
 })
 export class HomeModule { }

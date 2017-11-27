@@ -16,5 +16,5 @@ const story_routes: Routes = [
 @NgModule({
     imports: [RouterModule.forChild(story_routes)],
     exports: [RouterModule]
-  })
-  export class StoryRoutingModule {}
+})
+export class StoryRoutingModule {}

@@ -7,11 +7,12 @@ import { HomeModule } from './home/home.module';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: 'search', component: SearchComponent },
   { path: '', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'story', loadChildren: 'app/story/story.module#StoryModule' },
   { path: 'authentication', loadChildren: 'app/authentication/authentication.module#AuthenticationModule' },
   { path: 'analytics', loadChildren: 'app/analytics/analytics.module#AnalyticsModule' },
-  { path: 'search', component: SearchComponent },
+  { path: 'author', loadChildren: 'app/author/author.module#AuthorModule' },
 ];
 
 @NgModule({

@@ -21,6 +21,6 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     AuthenticationRoutingModule,
   ],
   providers: [],
-  exports: [ AuthenticationRoutingModule ],
+  exports: [ ],
 })
 export class AuthenticationModule { }

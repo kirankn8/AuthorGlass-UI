@@ -1,8 +1,8 @@
 <h6>Trending on Bookshelf</h6>
 <ngx-carousel [inputs]="carouselTile">
       <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-          <app-book></app-book>
+          <app-book [imgUrl]="'https://authorglass.s3.amazonaws.com/coverpage/4a26554fd4764922be5e98aeafe82e57.jpg'"></app-book>
       </ngx-tile>
-    <button NgxCarouselPrev class='leftRs'>&lt;</button>
-    <button NgxCarouselNext class='rightRs'>&gt;</button>
+    <button NgxCarouselPrev class='leftRs my-auto'><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+    <button NgxCarouselNext class='rightRs my-auto'><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
 </ngx-carousel>

@@ -12,6 +12,6 @@ import { AnalyticsComponent } from './analytics.component';
     AnalyticsRoutingModule,
   ],
   providers: [],
-  exports: [ AnalyticsRoutingModule ],
+  exports: [ ],
 })
 export class AnalyticsModule { }

@@ -1,0 +1,8 @@
+#author-name {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+}
+
+#author-name:hover {
+    text-decoration: underline;
+}

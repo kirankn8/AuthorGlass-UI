@@ -33,6 +33,6 @@ import { ReviewsComponent } from './display-story/ratings/reviews/reviews.compon
     StoryRoutingModule,
   ],
   providers: [],
-  exports: [ DisplayStoryComponent ],
+  exports: [ ],
 })
 export class StoryModule { }

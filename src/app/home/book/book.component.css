@@ -31,6 +31,12 @@
     width: 50%;
 }
 
+@media(max-width:767px){
+    .csstransforms3d  .book {
+        width: 80%;
+    }
+}
+
 .csstransforms3d  .book img {
     position: relative;
     width: 100%;
