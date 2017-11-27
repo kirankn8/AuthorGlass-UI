@@ -3,9 +3,9 @@
 		Select Chapter
 	</button>
 	<div class="dropdown-menu">
-		<a class="dropdown-item" href="#">Action</a>
-		<a class="dropdown-item" href="#">Another action</a>
-		<a class="dropdown-item" href="#">Something else here</a>
+		<a class="dropdown-item" href="#">Chapter 1</a>
+		<a class="dropdown-item" href="#">Chapter 2</a>
+		<a class="dropdown-item" href="#">Chapter 3</a>
 	</div>
 </div>
 <div class="float-md-right float-sm-left">
@@ -13,7 +13,7 @@
 	<button class="btn btn-primary btn-sm" (click)="nextPage()">Next Page</button>
 </div>
 <div class="pages">
-	<div class="page" id="page1" [@page]="pageAnimation" (@page.done)="resetPageAnimation($event)">
+	<div class="page container" id="page1" [@page]="pageAnimation" (@page.done)="resetPageAnimation($event)">
 		<div class="card">
 			<div class="card-header">
 				<div class="float-right">
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="page" id="page2">
+	<div class="page container" id="page2">
 		<div class="card">
 			<div class="card-header">
 				<div class="float-right">

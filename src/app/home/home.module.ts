@@ -6,11 +6,14 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './/home-routing.module';
 import { BookComponent } from './book/book.component';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    NgxCarouselModule,
   ],
   declarations: [ DashboardComponent, BookshelfComponent, RecommendationsComponent, HomeComponent, BookComponent],
   exports:      [ HomeComponent ],

@@ -28,11 +28,13 @@
     outline: 1px solid transparent; /* Helps smooth jagged edges in Firefox */
     box-shadow: none;
     margin: 0;
+    width: 50%;
 }
 
 .csstransforms3d  .book img {
     position: relative;
-    max-width: 100%;
+    width: 100%;
+    
 }
 
 .csstransforms3d  .book:before,

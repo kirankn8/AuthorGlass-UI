@@ -1,5 +1,8 @@
 <h6>Trending on Bookshelf</h6>
-<p>
-  Display Trending Books
-</p>
-<app-book></app-book>
+<ngx-carousel [inputs]="carouselTile">
+      <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+          <app-book></app-book>
+      </ngx-tile>
+    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+    <button NgxCarouselNext class='rightRs'>&gt;</button>
+</ngx-carousel>
