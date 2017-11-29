@@ -14,6 +14,7 @@ import { AlternateComponent } from './display-story/alternate/alternate.componen
 import { UserRatingScorecardComponent } from './display-story/ratings/user-rating-scorecard/user-rating-scorecard.component';
 import { UserRatingReviewComponent } from './display-story/ratings/user-rating-review/user-rating-review.component';
 import { ReviewsComponent } from './display-story/ratings/reviews/reviews.component';
+import { TinyEditorComponent } from './shared/tiny-editor/tiny-editor.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ReviewsComponent } from './display-story/ratings/reviews/reviews.compon
     UserRatingScorecardComponent,
     UserRatingReviewComponent,
     ReviewsComponent,
+    TinyEditorComponent,
   ],
   imports: [
     CommonModule,

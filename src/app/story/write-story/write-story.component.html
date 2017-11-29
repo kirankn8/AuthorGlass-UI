@@ -1,4 +1,3 @@
-
 <!-- 
 <h6>Multi Step Form</h6>
 <ul>
@@ -13,85 +12,94 @@
 
   -->
 
+<div class="d-flex justify-content-between">
+  <span class="step">
+    <small>Step 1
+      <br>Design Coverpage</small>
+  </span>
+  <span class="step">
+    <small>Step 2
+      <br>Summarize the Story</small>
+  </span>
+  <span class="step">
+    <small>Step 3
+      <br>Write Story</small>
+  </span>
+</div>
+<div class="progress">
+  <div class="progress-bar" [appProgressBar]="progress"></div>
+</div>
+
 <form id="regForm" action="">
-  
-  <!-- <h6>Write Story:</h6> -->
-  <div class="d-flex justify-content-between">
-    <span class="step"><small>Step 1<br>Design Coverpage</small></span>
-    <span class="step"><small>Step 2<br>Summarize the Story</small></span>
-    <span class="step"><small>Step 3<br>Write Story</small></span>
-  </div>
-  <div class="progress">
-    <div class="progress-bar" [appProgressBar]="progress"></div>
-  </div>
-  <div class="container">
+  <div class="container" class="tabbed-regform">
     <!-- One "tab" for each step in the form: -->
-    <div class="tab">Name:
-      <p><input placeholder="First name..." oninput="this.className = ''"></p>
-      <p><input placeholder="Last name..." oninput="this.className = ''"></p>
-    </div>
-    
-    <div class="tab">Story Summary
-        <div class="container">
-            <form>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                </div>
-              </div>
-              <fieldset class="form-group row">
-                <legend class="col-form-legend col-sm-2">Radios</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      Option one is this and that&mdash;be sure to include why it's great
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      Option two can be something else and selecting it will deselect option one
-                    </label>
-                  </div>
-                  <div class="form-check disabled">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                      Option three is disabled
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <div class="form-group row">
-                <label class="col-sm-2">Checkbox</label>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox"> Check me out
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="offset-sm-2 col-sm-10">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
-              </div>
-            </form>
-          </div>
-    </div>
-    
+
+    <!-- Coverpage Upload and Edit -->
     <div class="tab">
-      <br><br>
-      <!-- <div class="row">
-        <div class="col-md-2">
+      Coverpage Editor
+    </div>
+
+    <!-- Fill basic information about story -->
+    <div class="tab">
+      <div class="container">
+        <!-- 
+              Form inputs : 
+              1) Title
+              2) Summary
+              3) Language
+              4) Genre
+             -->
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="form-group">
+              <label for="title">Story Title: </label>
+              <input type="text" class="form-control" id="title" aria-describedby="titleHelp">
+              <small id="titleHelp" class="form-text text-muted">
+                Give an attractive story title!
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="summary">Summary: </label>
+              <textarea class="form-control" id="summary" rows="3" aria-describedby="descriptionHelp"></textarea>
+              <small id="descriptionHelp" class="form-text text-muted">
+                Write a short description of your story
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="language">Language: </label>
+              <select class="form-control" id="language" aria-describedby="languageHelp">
+                <option>English</option>
+                <option>Kannada</option>
+                <option>Hindi</option>
+                <option>Tamil</option>
+                <option>Telugu</option>
+              </select>
+              <small id="languageHelp" class="form-text text-muted">
+                Select the language of your story
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="genre">Genre: </label>
+              <div class="row">
+                <div class="col-sm-4" *ngFor="let genre of genres">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <div class="genre-name">{{ genre }}</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Write story -->
+    <div class="tab">
+      <div class="row">
+        <div class="col-md-3">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
@@ -99,25 +107,28 @@
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
           </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">abcd</div>
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <tiny-editor [elementId]="'my-editor-id'"></tiny-editor>
+            </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">abcd</div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">abcd</div>
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">abcd</div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
-  </div>
+    <div class="mr-5" style="overflow:auto;">
+      <div style="float:right;">
+        <button class="btn btn-primary btn-sm" type="button" id="prevBtn" (click)="nextPrev(-1)">
+          Previous
+        </button>
+        <button class="btn btn-primary btn-sm" type="button" id="nextBtn" (click)="nextPrev(1)">
+          Next
+        </button>
+      </div>
+    </div>
 
-  <div style="overflow:auto;">
-    <div style="float:right;">
-      <button type="button" id="prevBtn" (click)="nextPrev(-1)">Previous</button>
-      <button type="button" id="nextBtn" (click)="nextPrev(1)">Next</button>
-    </div>
   </div>
-  
-  
-  
-  </form>
+</form>
