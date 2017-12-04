@@ -33,4 +33,36 @@
 label {
   color: rgb(8, 8, 8);
 }
-  
+.chapter-index {
+  /* position: fixed; */
+}
+/* .nav-link {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+} */
+.fa-pencil {
+  position: relative;
+  bottom: -3px;
+  cursor:pointer;
+}
+.fa-trash, .fa-check {
+  position: relative;
+  bottom: -3px;
+  left: 10px;
+  cursor:pointer;
+}
+.fa-plus-circle {
+  cursor:pointer;
+}
+.fa-undo {
+  padding-right: 4%;
+}
+.nav-link {
+  display: inline-block;
+}
+.input-chapter-title {
+  width: 85%;
+  height: 50%;
+  outline: 0;
+}
