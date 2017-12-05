@@ -18,6 +18,7 @@ import { TinyEditorComponent } from './shared/tiny-editor/tiny-editor.component'
 /* Routing */
 import { StoryRoutingModule } from './story-routing.module';
 import { TruncatePipe } from './shared/truncate.pipe';
+import { CreativeSdkComponent } from './shared/creative-sdk/creative-sdk.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TruncatePipe } from './shared/truncate.pipe';
     ReviewsComponent,
     TinyEditorComponent,
     TruncatePipe,
+    CreativeSdkComponent,
   ],
   imports: [
     CommonModule,

@@ -18,7 +18,7 @@ export class TinyEditorComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnInit() {
   }
 
-  tinyMCEContent: string = "hello";
+  @Input() tinyMCEContent: string;
   @Input() elementId: String;
   @Output() onEditorKeyup = new EventEmitter<any>();
   
@@ -71,10 +71,10 @@ export class TinyEditorComponent implements OnInit, AfterViewInit, OnDestroy {
           const content = editor.getContent();
           this.onEditorKeyup.emit(content);
         });
-        editor.on('init', function() {
-          console.log(this.tinyMCEContent);
-          tinymce.activeEditor.setContent('html'+ this.tinyMCEContent);
-        });
+        // editor.on('init', function() {
+        //   console.log(this.tinyMCEContent);
+        //   tinymce.activeEditor.setContent('html'+ this.tinyMCEContent);
+        // });
       },
     });
   }

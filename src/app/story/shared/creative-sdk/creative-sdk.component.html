@@ -1,0 +1,9 @@
+<!-- Add an edit button, passing the HTML id of the image
+    and the public URL to the image -->
+<a href="#" (click)="launchEditor('editableimage',imageUrl);">
+    Edit Image
+</a>
+
+
+<!-- original line of HTML here: -->
+<img id="editableimage" [src]="imageUrl"/>
