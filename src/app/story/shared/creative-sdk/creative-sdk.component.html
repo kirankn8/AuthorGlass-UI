@@ -1,9 +1,19 @@
 <!-- Add an edit button, passing the HTML id of the image
     and the public URL to the image -->
-<a href="#" (click)="launchEditor('editableimage',imageUrl);">
-    Edit Image
-</a>
 
-
-<!-- original line of HTML here: -->
-<img id="editableimage" [src]="imageUrl" width="50%"/>
+<div class="row align-items-center">
+    <div class="col-md-6">
+        <!-- original line of HTML here: -->
+        <div>
+            <img id="editableimage" class="center-block" [src]="imageUrl" width="210px" height="297px" />
+            <br>
+            <button href="#" class="btn btn-danger text-center" (click)="launchEditor('editableimage',imageUrl);">
+                Edit Coverpage
+            </button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h6 class="text-center">Upload an image for coverpage</h6>
+        <input type="file" class="btn btn-info text-center" (change)="fileChange($event)" placeholder="Upload an image for coverpage" accept="image/x-png, image/gif, image/jpeg">
+    </div>
+</div>

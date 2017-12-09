@@ -1,0 +1,70 @@
+a {
+    text-decoration: none;
+}
+.book-coverpage {
+    height: 40%;
+    position: relative;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.book-summary {
+    float: right;
+}   
+.card-radius {
+    border-radius: 0px;
+}
+.card-height {
+    height:150px; 
+}
+.card-color-1 {
+    background-color: #37474f; 
+    border-color: #37474f;
+}
+.card-color-2 {
+    background-color: rgb(45, 43, 180); 
+    border-color: rgb(45, 43, 180); 
+}
+.card-color-3 {
+    background-color: rgb(151, 2, 156); 
+    border-color: rgb(151, 2, 156); 
+}
+.card-color-4 {
+    background-color: rgb(21, 185, 255); 
+    border-color: rgb(21, 185, 255); 
+}
+.card-color-5 {
+    background-color: rgb(168, 168, 168); 
+    border-color: black; 
+}
+.card-width-310 {
+    width: 310px;
+}
+.card-width-301 {
+    width: 301px;
+}
+.card-width-210 {
+    width: 230px;
+}
+.card-width-297 {
+    width: 297px;
+}
+.card-width-340 {
+    width: 340px;
+}
+.card-width-258 {
+    width: 258px;
+}
+@media (max-width: 768px) { 
+    .card {
+        width: 98% !important;
+    }
+    .card-block {
+        height:150px; 
+        width: 100% !important;
+        overflow: hidden;
+    }  
+    .book-coverpage {
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}

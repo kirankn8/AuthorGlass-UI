@@ -3,6 +3,6 @@
         <div class="book">
             <img [src]="imgUrl" />
         </div>
-        <p>Book Name</p>
+        <p *ngIf="bookName" class="book-title">{{ bookName }}</p>
     </a> 
 </div>

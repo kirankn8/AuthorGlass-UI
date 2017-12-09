@@ -8,6 +8,7 @@ import { HomeRoutingModule } from './/home-routing.module';
 import { BookComponent } from './book/book.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
+import { BookMasonryLayoutComponent } from './book-masonry-layout/book-masonry-layout.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import 'hammerjs';
     HomeRoutingModule,
     NgxCarouselModule,
   ],
-  declarations: [ DashboardComponent, BookshelfComponent, RecommendationsComponent, HomeComponent, BookComponent],
+  declarations: [ DashboardComponent, BookshelfComponent, RecommendationsComponent, HomeComponent, BookComponent, BookMasonryLayoutComponent],
   exports:      [ ],
 })
 export class HomeModule { }

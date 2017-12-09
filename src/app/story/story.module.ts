@@ -6,7 +6,7 @@ import { DisplayStoryComponent } from './display-story/display-story.component';
 
 import { WriteStoryComponent } from './write-story/write-story.component';
 import { EditStoryComponent } from './edit-story/edit-story.component';
-import { ProgressBarDirective } from './progress-bar.directive';
+import { ProgressBarDirective } from './shared/progress-bar.directive';
 import { ReadComponent } from './display-story/read/read.component';
 import { RatingsComponent } from './display-story/ratings/ratings.component';
 import { AlternateComponent } from './display-story/alternate/alternate.component';

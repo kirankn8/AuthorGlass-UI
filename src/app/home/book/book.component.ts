@@ -9,7 +9,7 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 export class BookComponent implements OnInit {
 
   @Input() imgUrl: string;
-
+  @Input() bookName: string;
   constructor() { }
 
   ngOnInit() {

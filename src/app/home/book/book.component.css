@@ -67,3 +67,6 @@
     -moz-transform: rotateY(20deg);
     -webkit-transform: perspective(100) rotateY(20deg);
 }
+.book-title {
+    margin-left: 3%;
+}

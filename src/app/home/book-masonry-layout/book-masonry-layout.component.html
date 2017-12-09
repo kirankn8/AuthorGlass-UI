@@ -1,0 +1,27 @@
+<br class="hidden-md-up">
+<h6 class="text-center">Bring Out the story teller in you</h6>
+<div class="layout">
+  <div class="row">
+    <div class="col-md-auto" *ngFor="let item of items;let i=index">
+      <a routerLink="story/">
+        <div [ngClass]="getCardColors(i)" >
+          <div [ngClass]="getDynamicCardWidth(i)">
+            <div class="row">
+              <div class="col-3">
+                <img class="book-coverpage" src="https://authorglass.s3.amazonaws.com/coverpage/4a26554fd4764922be5e98aeafe82e57.jpg" alt="">
+              </div>
+              <div class="col-9">
+                <div class="book-summary">
+                  <p>Book Name</p>
+                  <small>
+                    Book description... This pie came piled high with the toppings
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

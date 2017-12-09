@@ -30,7 +30,8 @@ export class TinyEditorComponent implements OnInit, AfterViewInit, OnDestroy {
       plugins: ['link', 'paste', 'table', 'image'],
       skin_url: '/assets/skins/lightgray',
       branding: false,
-      height : 800,
+      height : 600,
+      width : "95%",
       file_picker_types: 'image',
       file_picker_callback: function(cb, value, meta) {
         var input = document.createElement('input');
