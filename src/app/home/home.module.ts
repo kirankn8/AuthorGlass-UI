@@ -9,12 +9,14 @@ import { BookComponent } from './book/book.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { BookMasonryLayoutComponent } from './book-masonry-layout/book-masonry-layout.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   imports: [
     CommonModule,
     HomeRoutingModule,
     NgxCarouselModule,
+    ChartsModule,
   ],
   declarations: [ DashboardComponent, BookshelfComponent, RecommendationsComponent, HomeComponent, BookComponent, BookMasonryLayoutComponent],
   exports:      [ ],
