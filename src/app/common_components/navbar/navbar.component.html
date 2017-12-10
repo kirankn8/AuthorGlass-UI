@@ -4,10 +4,13 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" routerLink="/">
-            <img src="/assets/authorglass_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            AuthorGlass
-        </a>        
+        <div class="navbar-brand">
+            <a routerLink="/" style="color: inherit;text-decoration:none;">
+                <img src="/assets/authorglass_logo.png" height="30" class="d-inline-block align-top" alt="">
+                <b><i>AuthorGlass</i></b>
+            </a> 
+            <i class="fa fa-bell-o hidden-lg-up" aria-hidden="true"></i>
+        </div>       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto my-auto">
                 <li class="nav-item">
@@ -16,6 +19,9 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+                <li>
+                    <i class="fa fa-bell-o fa-lg hidden-md-down" aria-hidden="true"></i>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="story/write" routerLinkActive="active">
                         Write Story

@@ -8,4 +8,16 @@
 .authorglass-navbar{
     margin-bottom: 2%;
 }
+.fa-bell-o {
+    position: relative;
+    top: 10px;
+    margin-right: 1em;
+}
+@media (max-width: 1024px) { 
+    .fa-bell-o {
+        float: right;
+        top: 7px;
+        margin-right: 2em;
+    }
+}
 
