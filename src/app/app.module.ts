@@ -3,9 +3,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './common_components/navbar/navbar.component';
-import { SuggestComponent } from './common_components/suggest/suggest.component';
-import { FooterComponent } from './common_components/footer/footer.component'
+import { NavbarComponent } from './common/navbar/navbar.component';
+import { SuggestComponent } from './common/suggest/suggest.component';
+import { FooterComponent } from './common/footer/footer.component'
 
 /* Routing Module */
 import { AppRoutingModule }   from './app-routing.module';
@@ -14,7 +14,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { HomeModule } from './home/home.module';
 import { AnalyticsModule } from './analytics/analytics.module';
 import { SearchComponent } from './search/search.component';
-import { CardBookComponent } from './shared_components/card-book/card-book.component';
+import { CardBookComponent } from './shared/components/card-book/card-book.component';
 
 @NgModule({
   declarations: [

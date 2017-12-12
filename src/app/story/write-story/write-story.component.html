@@ -85,9 +85,10 @@
               <label for="genre">Genre: </label>
               <div class="row">
                 <div class="col-sm-4" *ngFor="let genre of genres">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    <div class="genre-name">{{ genre }}</div>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description small">{{ genre }}</span>
                   </label>
                 </div>
               </div>

@@ -1,0 +1,69 @@
+<div *ngIf="bannerMsgs.length">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" *ngFor="let bannerMsg of bannerMsgs; let i=index" [attr.data-slide-to]="i" [ngClass]="i==0? 'active': '' "></li>
+      <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li> -->
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="comment-carousel">
+          <p class="lead hidden-sm-down">
+            "{{ 'After you get up and running, you can place Font Awesome icons just After you get up and running, you can place Font
+            Awesome icons just After you get up and running, you can place Font Awesome icons just After you get up and running,
+            you can place Font Awesome icons just' | truncate:[270] }}"
+          </p>
+          <p class="lead hidden-md-up">
+            {{ 'After you get up and running, you can place Font Awesome icons just After you get up and running, you can place Font
+            Awesome icons just' | truncate:[85] }}
+          </p>
+          <p>- asjakjs dj kdj a</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="comment-carousel">
+          <p class="lead">
+            "B"
+          </p>
+          <p>- asjakjs dj kdj a</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="comment-carousel">
+          <p class="lead">
+            "C"
+          </p>
+          <p>- asjakjs dj kdj a</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="comment-carousel">
+          <p class="lead">
+            "D"
+          </p>
+          <p>- asjakjs dj kdj a</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="comment-carousel">
+          <p class="lead">
+            "E"
+          </p>
+          <p>- asjakjs dj kdj a</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+  <br>
+</div>

@@ -1,4 +1,5 @@
 <!-- Dashboard - Visible only for signed in user -->
+<br>
 <h6><b>Dashboard</b></h6>
 <!-- <ul>
   <li>You are #[number] trending author on AuthorGlass</li>
@@ -6,29 +7,44 @@
   <li>Latest comments/reviews & ratings for the stories written by author</li>
   <li>Link to Analytics</li>
 </ul> -->
-<div class="row">
-    <div class="col-md-6">
-      <div style="display: block;">
-      <canvas baseChart width="400" height="400"
-                  [datasets]="lineChartData"
-                  [labels]="lineChartLabels"
-                  [options]="lineChartOptions"
-                  [colors]="lineChartColors"
-                  [legend]="lineChartLegend"
-                  [chartType]="lineChartType"
-                  (chartHover)="chartHovered($event)"
-                  (chartClick)="chartClicked($event)"></canvas>
+<div class="card">
+	<div class="card-block dashboard-card">
+		<div class="row">
+      <div class="col-md-6 my-auto">
+          <div class="line-chart">
+            <canvas baseChart width="800" height="400"
+                    [datasets]="lineChartData"
+                    [labels]="lineChartLabels"
+                    [options]="lineChartOptions"
+                    [colors]="lineChartColors"
+                    [legend]="lineChartLegend"
+                    [chartType]="lineChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+          </div>
+      </div>
+			<div class="col-md-6">
+          <div class="pie-chart">
+            <canvas baseChart width="400" height="400"
+                    [datasets]="pieChartData"
+                    [labels]="pieChartLabels"
+                    [options]="pieChartOptions"
+                    [colors]="pieChartColors"
+                    [legend]="pieChartLegend"
+                    [chartType]="pieChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+          </div>
+			</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12">
+          <hr>
+          <button type="button" class="btn btn-outline-danger btn-sm float-left bookmark-btn">11 Bookmarks</button>
+          <button type="button" class="btn btn-outline-success btn-sm float-left favourites-btn">21 Favourites</button>
+          <button type="button" class="btn btn-outline-primary btn-sm float-right my-auto analytics-button" routerLink="analytics">More <i class="fa fa-chevron-right hidden-sm-down" aria-hidden="true"></i></button>
       </div>
     </div>
-    <div class="col-md-6" style="margin-bottom: 10px">
-      <table class="table table-responsive table-condensed">
-        <tr>
-          <th *ngFor="let label of lineChartLabels">{{label}}</th>
-        </tr>
-        <tr *ngFor="let d of lineChartData">
-          <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
-        </tr>
-      </table>
-      <button (click)="randomize()">CLICK</button>
-    </div>
   </div>
+</div>
