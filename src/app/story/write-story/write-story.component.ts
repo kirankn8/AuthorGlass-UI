@@ -48,7 +48,7 @@ export class WriteStoryComponent implements OnInit {
   }
 
   removeChapter(chapterId) {
-    if(chapterId!=0){
+    if(this.chapters.length>1){
       this.undoStoryForm.push({chapterId: chapterId, chapter: this.chapters.at(chapterId)});
       console.log(this.undoStoryForm);
       this.chapters.removeAt(chapterId);
@@ -85,8 +85,10 @@ export class WriteStoryComponent implements OnInit {
   }
 
   makePillActive(i) {
-    if(this.activePillId!=i)
+    if(this.activePillId!=i){
       this.activePillId = i;
+      this.editChapterTitleId = -1;
+    }
   } 
 
   keyupTinyMCEHandlerFunction(event, i) {

@@ -46,7 +46,7 @@ label {
   bottom: -3px;
   cursor:pointer;
 }
-.fa-trash, .fa-check {
+.fa-trash-o, .fa-check {
   position: relative;
   bottom: -3px;
   left: 10px;

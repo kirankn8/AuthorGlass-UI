@@ -1,25 +1,49 @@
 .dashboard-card {
     height:inherit !important;
 }
+.dashboard-btns {
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 2%;
+    display: inline;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.dashboard-custom-icon {
+    width: 26px;
+    height: 18px;
+}
+.dashapp-icon {
+    width: 35px;
+}
+.dashboard-nav-items {
+    cursor: pointer;
+}
+.dashboard-nav-items:hover {
+    border-bottom: 2px solid rgb(173, 173, 173);
+}
+.dashboard-row .col-md-5 {
+    margin-bottom: 1em;
+}
 
-@media (min-width: 768px) { 
+@media (min-width: 1024px) { 
     .pie-chart {
-        width: 55%;
-        height: 55%;
+        width: 60%;
+        height: 60%;
         float: right;
-    }
-    .line-chart {
-        width: 100%;
-        height: 50%;
-        float: right;
-        padding: 0;
     }
     .bookmark-btn {
         margin-right: 1em;
     }
 }
 
-@media (max-width: 468px) { 
+@media (max-width: 1023px) { 
+    .pie-chart {
+        width: 100%;
+        height: 100%;
+        float: right;
+    }
     .analytics-button {
         width: 100%;
     }

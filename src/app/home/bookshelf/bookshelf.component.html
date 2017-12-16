@@ -1,6 +1,6 @@
 <h6><b>Trending on Bookshelf</b></h6>
 <ngx-carousel [inputs]="carouselTile">
-      <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+      <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems">
           <app-book [imgUrl]="'https://authorglass.s3.amazonaws.com/coverpage/4a26554fd4764922be5e98aeafe82e57.jpg'"
                     bookName="Book Name"></app-book>
       </ngx-tile>

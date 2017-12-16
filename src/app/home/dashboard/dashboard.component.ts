@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { dashboardAppsList } from './dashboard-apps-list';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,6 +9,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  dashboardApps = dashboardAppsList;
+  
   constructor() { }
 
   ngOnInit() {

@@ -43,7 +43,7 @@
 
     <!-- Fill basic information about story -->
     <div class="tab">
-      <div class="container"> -->
+      <div class="container"> 
         <!-- 
               Form inputs : 
               1) Title
@@ -112,7 +112,7 @@
                  *ngFor="let chapter of chapters.controls; let i=index">
               <div (click)="makePillActive(i)" [class]="i==activePillId? 'nav-link active' : 'nav-link'" [id]="i" data-toggle="pill" [attr.href]="getDataToggleLink(i)" role="tab" [attr.aria-controls]="getDataToggleLinkForId(i)" [attr.aria-selected]="i==activePillId? true: false">
                 <div *ngIf="editChapterTitleId != i">{{ chapters.value[i].title | truncate:[18] }}
-                  <i class="fa fa-trash float-right" aria-hidden="true" (click)="removeChapter(i)"></i>
+                  <i class="fa fa-trash-o float-right" aria-hidden="true" (click)="removeChapter(i)"></i>
                   <i class="fa fa-pencil float-right" aria-hidden="true" (click)="editChapterTitle(i)"></i>
                 </div>
                 <div *ngIf="editChapterTitleId == i" [formGroupName]="i">

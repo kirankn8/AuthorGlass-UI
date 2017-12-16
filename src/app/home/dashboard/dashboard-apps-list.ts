@@ -1,0 +1,87 @@
+import { Apps } from './apps';
+
+export const dashboardAppsList: Apps[] = [
+    {
+        name: 'My Profile',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-user-o fa-lg',
+        color: 'rgb(204, 0, 255)',
+    },
+    {
+        name: 'Library',
+        routerlink: 'story',
+        isGlyphicon: false,
+        imageUrl: 'assets/dashboard-icons/imageedit_2_9923362810.png',
+    },
+    {
+        name: 'Published Books',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-book fa-lg',
+        color: 'rgb(9, 152, 247)',
+    },
+    {
+        name: 'Unpublished Books',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-align-left fa-lg',
+        color: 'rgb(255, 7, 143)',
+    },
+    {
+        name: 'Reader\'s Comments',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-comments fa-lg',
+        color: 'rgb(110, 209, 17)',
+    },
+    {
+        name: 'History',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-clock-o fa-lg',
+        color: 'rgb(255, 145, 0)',
+    },
+    {
+        name: 'Forked Books',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-code-fork fa-lg',
+        color: 'rgb(0, 0, 0)',
+    },
+    {
+        name: 'Merged Books',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-compress fa-lg',
+        color: 'rgb(0, 0, 0)',
+    },
+    {
+        name: 'Bookmarks',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-bookmark fa-lg',
+        color: 'rgb(255, 0, 0)',
+    },
+    {
+        name: 'Favourite Quotes',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-heart fa-lg',
+        color: 'rgb(255, 123, 0)',
+    },
+    {
+        name: 'Analytics',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-line-chart fa-lg',
+        color: 'rgb(0, 179, 202)',
+    },
+    {
+        name: 'Coming Soon',
+        routerlink: 'story',
+        isGlyphicon: true,
+        glyphicon: 'fa fa-binoculars fa-lg',
+        color: 'rgb(86, 71, 99)',
+    },
+];

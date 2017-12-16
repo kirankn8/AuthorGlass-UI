@@ -1,27 +1,28 @@
 <!-- Dashboard - Visible only for signed in user -->
-<br>
 <h6><b>Dashboard</b></h6>
-<!-- <ul>
-  <li>You are #[number] trending author on AuthorGlass</li>
-  <li>Pi-Chart showing number of views for latest 10 stories by authors</li>
-  <li>Latest comments/reviews & ratings for the stories written by author</li>
-  <li>Link to Analytics</li>
-</ul> -->
 <div class="card">
 	<div class="card-block dashboard-card">
 		<div class="row">
       <div class="col-md-7 my-auto">
-        Links to navigate to different parts of the website( will appear like a button with an image) 
-        <br>
-        Syntax of button : [ image - Below mentioned Functionality ]
-        <ul>
-          <li>Library with Books symbol</li>
-          <li>Books Authored By Me!!!</li>
-          <li>Profile</li>
-          <li>Comments from Readers</li>
-          <li>Action History</li>
-        </ul>
+        <div class="row dashboard-row">
+          <div class="col-md-5 col-xs-6" *ngFor="let dashapp of dashboardApps">
+            <span [routerLink]="dashapp.routerlink">
+              <table>
+                <tr>
+                  <td class="dashapp-icon dashboard-nav-items" *ngIf="dashapp.isGlyphicon">
+                    <i [ngClass]="dashapp.glyphicon" aria-hidden="true" [style.color]="dashapp.color"></i>
+                  </td>
+                  <td width="35px" *ngIf="!dashapp.isGlyphicon" class="dashboard-nav-items">
+                    <img src="assets/dashboard-icons/imageedit_2_9923362810.png" class="dashboard-custom-icon">
+                  </td>
+                  <td class="dashboard-nav-items">{{ dashapp.name }}</td>
+                </tr>
+              </table>
+            </span>
+          </div>
+        </div>
       </div>
+
 			<div class="col-md-5">
           <div class="pie-chart">
             <canvas baseChart width="400" height="400"
@@ -32,18 +33,19 @@
                     [legend]="pieChartLegend"
                     [chartType]="pieChartType"
                     (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"></canvas>
+                    (chartClick)="chartClicked($event)">
+            </canvas>
           </div>
 			</div>
     </div>
-    <br>
+    <!-- <br>
     <div class="row">
       <div class="col-12">
-          <hr>
+          <hr class="hidden-sm-down">
           <button type="button" class="btn btn-outline-danger btn-sm float-left bookmark-btn">Bookmarks</button>
           <button type="button" class="btn btn-outline-success btn-sm float-left favourites-btn">Favourite Dialogs</button>
-          <button type="button" class="btn btn-outline-primary btn-sm float-right my-auto analytics-button" routerLink="analytics">More <i class="fa fa-chevron-right hidden-sm-down" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-outline-primary btn-sm float-right analytics-button" routerLink="analytics">More <i class="fa fa-chevron-right hidden-sm-down" aria-hidden="true"></i></button>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
