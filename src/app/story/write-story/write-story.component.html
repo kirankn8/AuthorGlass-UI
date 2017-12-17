@@ -13,16 +13,16 @@
   -->
 
 <div class="d-flex justify-content-between">
-  <span class="step">
+  <!-- <span class="step">
     <small>Step 1
       <br>Design Coverpage</small>
-  </span>
+  </span> -->
   <span class="step">
-    <small>Step 2
+    <small>Step 1
       <br>Summarize the Story</small>
   </span>
   <span class="step">
-    <small>Step 3
+    <small>Step 2
       <br>Write Story</small>
   </span>
 </div>
@@ -35,11 +35,11 @@
     <!-- One "tab" for each step in the form: -->
 
     <!-- Coverpage Upload and Edit -->
-    <div class="tab">
+    <!-- <div class="tab">
       <div class="container">
-        <creative-sdk imageUrl="http://www.darrekderstinephotography.com/photos/full/Falls_I.jpg"></creative-sdk>
+        <creative-sdk imageUrl="/assets/upload_coverpage.png"></creative-sdk>
       </div>
-    </div>
+    </div> -->
 
     <!-- Fill basic information about story -->
     <div class="tab">
@@ -54,33 +54,41 @@
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-10">
-            <div class="form-group">
-              <label for="title">Story Title: </label>
-              <input type="text" class="form-control" id="title" aria-describedby="titleHelp">
-              <small id="titleHelp" class="form-text text-muted">
-                Give an attractive story title!
-              </small>
+            <div class="row">
+              <div class="col-8">
+                <div class="form-group">
+                  <label for="title">Story Title: </label>
+                  <input type="text" class="form-control" id="title" aria-describedby="titleHelp">
+                  <small id="titleHelp" class="form-text text-muted">
+                    Give an attractive story title!
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="summary">Summary: </label>
+                  <textarea class="form-control" id="summary" rows="3" aria-describedby="descriptionHelp"></textarea>
+                  <small id="descriptionHelp" class="form-text text-muted">
+                    Write a short description of your story
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="language">Language: </label>
+                  <select class="form-control" id="language" aria-describedby="languageHelp">
+                    <option>English</option>
+                    <option>Kannada</option>
+                    <option>Hindi</option>
+                    <option>Tamil</option>
+                    <option>Telugu</option>
+                  </select>
+                  <small id="languageHelp" class="form-text text-muted">
+                    Select the language of your story
+                  </small>
+                </div>
+              </div>
+              <div class="col-4">
+                  <creative-sdk imageUrl="/assets/upload_coverpage.png"></creative-sdk>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="summary">Summary: </label>
-              <textarea class="form-control" id="summary" rows="3" aria-describedby="descriptionHelp"></textarea>
-              <small id="descriptionHelp" class="form-text text-muted">
-                Write a short description of your story
-              </small>
-            </div>
-            <div class="form-group">
-              <label for="language">Language: </label>
-              <select class="form-control" id="language" aria-describedby="languageHelp">
-                <option>English</option>
-                <option>Kannada</option>
-                <option>Hindi</option>
-                <option>Tamil</option>
-                <option>Telugu</option>
-              </select>
-              <small id="languageHelp" class="form-text text-muted">
-                Select the language of your story
-              </small>
-            </div>
+            
             <div class="form-group">
               <label for="genre">Genre: </label>
               <div class="row">

@@ -20,7 +20,7 @@ export class WriteStoryComponent implements OnInit {
 
   // Multi-step form UI variables 
   currentTab = 0;
-  progress = 100/3;
+  progress = 100/2;
 
   // Fill Chapters page variables
   editChapterTitleId = -1;          // Represents a flag && Id in the array
@@ -126,9 +126,9 @@ export class WriteStoryComponent implements OnInit {
 
   nextPrev(n:number) {
       if(n==1)
-        this.progress += (100/3);
+        this.progress += (100/2);
       else
-        this.progress -= (100/3);
+        this.progress -= (100/2);
       
       let x: HTMLCollectionOf<Element> = document.getElementsByClassName("tab");
       (x[this.currentTab] as HTMLDivElement).style.display = "none";

@@ -20,7 +20,7 @@ export class ProgressBarDirective implements OnInit {
 
   setWidthAndInnerHTML() {
     this.el.nativeElement.style.width = this.percentage+"%";
-    this.el.nativeElement.innerHTML = "Step: "+Math.ceil(3*this.percentage/100)+"/3";
+    this.el.nativeElement.innerHTML = "Step: "+Math.ceil(2*this.percentage/100)+"/2";
   }
   
 }

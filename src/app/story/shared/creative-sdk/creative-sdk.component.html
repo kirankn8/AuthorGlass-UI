@@ -1,19 +1,34 @@
 <!-- Add an edit button, passing the HTML id of the image
     and the public URL to the image -->
 
-<div class="row align-items-center">
-    <div class="col-md-6">
+<div class="container">
+    <button [hidden]="!url" [disabled]="!url" href="#" class="btn btn-danger btn-sm text-center" (click)="launchEditor('editableimage',url);">
+            Edit Coverpage
+    </button>
+    <img id="editableimage" class="center-block" [src]="url ? url: imageUrl" width="210px" height="297px" />
+    <input type="file" (change)="readUrl($event)" placeholder="Upload an image for coverpage" accept="image/x-png, image/gif, image/jpeg">
+    <input id="click-upload" type="file">
+    <div id="drop-area" >
+        <p>Drop an image here!</p>
+        <p>(or click to upload)</p>
+    </div>
+    <img id="editable-image" class="img-responsive">
+</div>
+
+
+<!-- <div class="row align-items-center">
+    <div class="col-md-6"> -->
         <!-- original line of HTML here: -->
-        <div>
-            <img id="editableimage" class="center-block" [src]="imageUrl" width="210px" height="297px" />
+        <!-- <div>
+            <img id="editableimage" class="center-block" [src]="url ? url: imageUrl" width="210px" height="297px" />
             <br>
-            <button href="#" class="btn btn-danger text-center" (click)="launchEditor('editableimage',imageUrl);">
+            <button [disabled]="!url" href="#" class="btn btn-danger btn-sm text-center" (click)="launchEditor('editableimage',url);">
                 Edit Coverpage
             </button>
         </div>
     </div>
     <div class="col-md-6">
         <h6 class="text-center">Upload an image for coverpage</h6>
-        <input type="file" class="btn btn-info text-center" (change)="fileChange($event)" placeholder="Upload an image for coverpage" accept="image/x-png, image/gif, image/jpeg">
+        <input type="file" class="btn btn-info btn-sm text-center" (change)="readUrl($event)" placeholder="Upload an image for coverpage" accept="image/x-png, image/gif, image/jpeg">
     </div>
-</div>
+</div> -->

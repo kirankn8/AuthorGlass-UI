@@ -9,3 +9,28 @@
     margin-right:auto;
     display:block;
  }
+#editableimage {
+    border: 0.1px solid rgb(3, 3, 3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.padleft {
+	padding: 0px 0px 0px 20px;
+}
+
+.button-panel {
+	margin-bottom: 10px;
+	border-radius: 0;
+}
+
+#drop-area {
+	border: 5px dashed lightgray;
+	padding: 5em 2em;
+	text-align: center;
+	color: lightgray;
+	font-size: 24px;
+}
+
+#click-upload {
+  display: none;
+}
