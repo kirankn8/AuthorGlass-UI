@@ -12,6 +12,8 @@ import { BookMasonryLayoutComponent } from './book-masonry-layout/book-masonry-l
 import { ChartsModule } from 'ng2-charts';
 import { TruncatePipe } from './shared/truncate.pipe';
 import { BannerComponent } from './banner/banner.component';
+import { SharedModule } from '../shared/shared.module';
+// import { CardBookComponent } from '../shared/components/card-book/card-book.component';
 
 @NgModule({
   imports: [
@@ -19,6 +21,7 @@ import { BannerComponent } from './banner/banner.component';
     HomeRoutingModule,
     NgxCarouselModule,
     ChartsModule,
+    SharedModule,
   ],
   declarations: [ 
     DashboardComponent, 
@@ -30,6 +33,6 @@ import { BannerComponent } from './banner/banner.component';
     TruncatePipe,
     BannerComponent,
   ],
-  exports:      [ ],
+  exports: [ ],
 })
 export class HomeModule { }

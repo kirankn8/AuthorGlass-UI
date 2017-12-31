@@ -2,17 +2,17 @@
     and the public URL to the image -->
 
 <div class="container">
-    <button [hidden]="!url" [disabled]="!url" href="#" class="btn btn-danger btn-sm text-center" (click)="launchEditor('editableimage',url);">
-            Edit Coverpage
-    </button>
-    <img id="editableimage" class="center-block" [src]="url ? url: imageUrl" width="210px" height="297px" />
-    <input type="file" (change)="readUrl($event)" placeholder="Upload an image for coverpage" accept="image/x-png, image/gif, image/jpeg">
-    <input id="click-upload" type="file">
-    <div id="drop-area" >
-        <p>Drop an image here!</p>
-        <p>(or click to upload)</p>
+    <div class="mx-auto">
+        <img id="editableimage" class="center-block" [src]="url ? url: imageUrl" width="210px" height="297px" />
+        <button id="edit-coverpage-btn" [hidden]="!url" [disabled]="!url" href="#" class="btn btn-primary btn-sm text-center" (click)="launchEditor('editableimage',url);">
+                Edit Coverpage
+        </button>
+        <div class="d-flex justify-content-center">
+            <div>
+                <input type="file" id="coverpage-input" (change)="readUrl($event)" placeholder="Upload an image for coverpage" accept="image/x-png, image/gif, image/jpeg">
+            </div>
+        </div>
     </div>
-    <img id="editable-image" class="img-responsive">
 </div>
 
 

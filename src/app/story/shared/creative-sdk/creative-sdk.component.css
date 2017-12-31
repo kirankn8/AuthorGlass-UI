@@ -10,27 +10,19 @@
     display:block;
  }
 #editableimage {
-    border: 0.1px solid rgb(3, 3, 3);
+    border: 1px solid rgb(3, 3, 3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.padleft {
-	padding: 0px 0px 0px 20px;
+#coverpage-input[type=file] {
+    border-top: 2px solid rgb(0, 125, 209);
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    width: 210px;
+    font-size: 14px;
 }
-
-.button-panel {
-	margin-bottom: 10px;
-	border-radius: 0;
-}
-
-#drop-area {
-	border: 5px dashed lightgray;
-	padding: 5em 2em;
-	text-align: center;
-	color: lightgray;
-	font-size: 24px;
-}
-
-#click-upload {
-  display: none;
+#edit-coverpage-btn {
+    margin-top: 1em;
+    font-size: 12px;
+    background-color: rgb(0, 125, 209);
+    border-color: rgb(0, 125, 209);
 }

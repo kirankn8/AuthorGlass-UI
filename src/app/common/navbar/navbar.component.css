@@ -11,13 +11,85 @@
 .fa-bell-o {
     position: relative;
     top: 10px;
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
-@media (max-width: 1024px) { 
+#notification {
+    padding: 0;
+}
+#notification::after {
+    display: none;
+}
+.triangle {
+    position: absolute;
+    top: -8px;
+    left: 134px;
+    height: 15px;
+    width: 15px;
+    border-radius: 6px 0px 0px 0px;
+    transform: rotate(45deg);
+    background: #FFF;
+    border-top: 2px solid rgb(60, 138, 255);
+    border-left: 2px solid rgb(60, 138, 255);
+}
+.notification-header {
+    padding-top: 0;
+    margin: auto;
+    text-align: center;
+}
+.notification-menu {
+    position: absolute; 
+    left: -11em;
+    border: 2px solid rgb(60, 138, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 12px;
+    min-width: 25em;
+}
+.notification-items {
+    list-style: none;
+    padding: 0;
+}
+.notification-item {
+    margin-left: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-top: 1px solid rgb(236, 236, 236);
+    cursor: pointer;
+}
+.notification-item:hover {
+    background-color: rgb(240, 240, 240);
+}
+.notification-footer {
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 1020px) { 
     .fa-bell-o {
         float: right;
         top: 7px;
         margin-right: 2em;
+    }
+    .triangle {
+        position: absolute;
+        top: -8px;
+        left: 16em;
+        height: 15px;
+        width: 15px;
+        border-radius: 6px 0px 0px 0px;
+        transform: rotate(45deg);
+        background: #FFF;
+        border-top: 2px solid rgb(60, 138, 255);
+        border-left: 2px solid rgb(60, 138, 255);
+        display: none;
+    }
+    .notification-menu {
+        position: fixed; 
+        left: 15%;
+        top: 5em;
+        border: 2px solid rgb(60, 138, 255);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 12px;
+        max-width: 1em;
     }
 }
 

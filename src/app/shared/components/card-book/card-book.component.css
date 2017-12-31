@@ -1,0 +1,44 @@
+.box-layout {
+    padding: 3%;
+    padding-bottom: 1%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.coverpage {
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.book-name {
+    font-size: 14px; 
+}
+.author-name {
+    font-size: 10px;
+}
+.book-description {
+    font-size: 12px;
+}
+.center-block {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+ }
+.text-center {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+ }
+.padding-0{
+    /* padding-right:0;
+    padding-left:0; */
+}
+.action-buttons {
+    margin-top: 0;
+    padding: 0;
+}
+hr {
+    margin-bottom: 1%;
+}
+.checked-rating {
+    color: orange;
+}

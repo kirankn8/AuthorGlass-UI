@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, ElementRef, ViewChild } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 
 declare var Aviary: any;
@@ -22,13 +22,11 @@ export class CreativeSdkComponent implements OnInit {
     let self = this;
     this.featherEditor = new Aviary.Feather({
       apiKey: '3bfcd2b9623d45b98301fb7d037425a2',
-      // theme:'light',
       // tools : 'enhance,text,meme,draw,crop,resize,effects,frames,sharpness,whiten',
       onSave: function(imageID, newURL) {
         var img = document.getElementById(imageID) as HTMLImageElement;
         img.src = newURL;
         console.log("src: "+img.src);
-        console.log("URL: "+newURL);
         this.url = newURL;
         self.featherEditor.close();
       },      

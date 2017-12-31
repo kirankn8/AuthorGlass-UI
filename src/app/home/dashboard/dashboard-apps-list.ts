@@ -72,7 +72,7 @@ export const dashboardAppsList: Apps[] = [
     },
     {
         name: 'Analytics',
-        routerlink: 'story',
+        routerlink: 'analytics',
         isGlyphicon: true,
         glyphicon: 'fa fa-line-chart fa-lg',
         color: 'rgb(0, 179, 202)',

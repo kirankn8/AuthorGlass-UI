@@ -14,7 +14,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { HomeModule } from './home/home.module';
 import { AnalyticsModule } from './analytics/analytics.module';
 import { SearchComponent } from './search/search.component';
-import { CardBookComponent } from './shared/components/card-book/card-book.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,6 @@ import { CardBookComponent } from './shared/components/card-book/card-book.compo
     SuggestComponent,
     FooterComponent,
     SearchComponent,
-    CardBookComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +32,7 @@ import { CardBookComponent } from './shared/components/card-book/card-book.compo
     AuthenticationModule,
     HomeModule,
     AnalyticsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
